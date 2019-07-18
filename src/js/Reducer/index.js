@@ -4,6 +4,7 @@
 
 import { combineReducers } from "redux";
 import login from "./Login";
+import PlanetSearch from "./PlanetSearch";
 
 let todos = (state = {}) => {
   return {
@@ -21,6 +22,7 @@ export default combineReducers({
   todos,
   counter,
   login,
+  PlanetSearch
 //   IndexedDB,
 //   Offline,
 //   Entities,

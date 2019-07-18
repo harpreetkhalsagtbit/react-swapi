@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 // import { Link } from "react-router-dom";
 
 // import Header from "../../Components/Commons/Header";
-// import HomeWizardContainer from '../../Containers/HomeWizardContainer'
+import SearchFormContainer from '../../Containers/PlanetSearchFormContainer'
 class Home extends React.PureComponent {
     render() {
         return (
@@ -10,7 +10,7 @@ class Home extends React.PureComponent {
                 {/* <Header></Header> */}
                 <main>
                     <h3 className="login-title">Home</h3>
-                    {/* <HomeWizardContainer></HomeWizardContainer> */}
+                    <SearchFormContainer></SearchFormContainer>
                 </main>
             </Fragment>
         );
