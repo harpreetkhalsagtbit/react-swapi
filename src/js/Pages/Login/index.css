@@ -1,0 +1,29 @@
+
+.line {
+    width:100%;
+    border-top: 1px solid #d5dce0;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.socialActionOr {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.google {
+    background-color: #fff;
+}
+
+.login-title {
+    font-size: 2.8125rem;
+    font-weight: 400;
+    color: #151b26;
+    text-align: center;
+}
+
+.login-container {
+    padding: 80px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
