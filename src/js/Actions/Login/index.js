@@ -13,7 +13,7 @@ export const performLoginAction = data => {
         .then(res => res.json())
         .then(json => {
             let res = json.results.filter((people) => {
-                if (people.username === data.username && people.birth_year === data.password) {
+                if (people.name === data.username && people.birth_year === data.password) {
                     return true
                 } else {
                     return false;
