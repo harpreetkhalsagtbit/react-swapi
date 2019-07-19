@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/harpreetkhalsagtbit/react-swapi/static/css/main.202d870d.chunk.css",
-    "main.js": "/harpreetkhalsagtbit/react-swapi/static/js/main.234027de.chunk.js",
-    "main.js.map": "/harpreetkhalsagtbit/react-swapi/static/js/main.234027de.chunk.js.map",
-    "runtime~main.js": "/harpreetkhalsagtbit/react-swapi/static/js/runtime~main.aab3ca4d.js",
-    "runtime~main.js.map": "/harpreetkhalsagtbit/react-swapi/static/js/runtime~main.aab3ca4d.js.map",
-    "static/js/2.80caa763.chunk.js": "/harpreetkhalsagtbit/react-swapi/static/js/2.80caa763.chunk.js",
-    "static/js/2.80caa763.chunk.js.map": "/harpreetkhalsagtbit/react-swapi/static/js/2.80caa763.chunk.js.map",
-    "index.html": "/harpreetkhalsagtbit/react-swapi/index.html",
-    "precache-manifest.b3250e11055e18566331b3443b8b6d51.js": "/harpreetkhalsagtbit/react-swapi/precache-manifest.b3250e11055e18566331b3443b8b6d51.js",
-    "service-worker.js": "/harpreetkhalsagtbit/react-swapi/service-worker.js",
-    "static/css/main.202d870d.chunk.css.map": "/harpreetkhalsagtbit/react-swapi/static/css/main.202d870d.chunk.css.map"
+    "main.css": "./static/css/main.202d870d.chunk.css",
+    "main.js": "./static/js/main.68df065f.chunk.js",
+    "main.js.map": "./static/js/main.68df065f.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+    "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+    "static/js/2.80caa763.chunk.js": "./static/js/2.80caa763.chunk.js",
+    "static/js/2.80caa763.chunk.js.map": "./static/js/2.80caa763.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.03e9ccfa4d44495f2c7217d5369d873b.js": "./precache-manifest.03e9ccfa4d44495f2c7217d5369d873b.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.202d870d.chunk.css.map": "./static/css/main.202d870d.chunk.css.map"
   }
 }
