@@ -142,7 +142,7 @@ p {
 
 .table-header {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .table-header-cell {
@@ -163,15 +163,15 @@ p {
 
 .table-rows {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .table-row-cell {
   min-height: 40px;
   background-color: grey;
   text-align: center;
-  line-height: 40px;
-  font-size: 22px;
+  line-height: 30px;
+  font-size: 15px;
   color: white;
   display: flex;
   justify-content: center;

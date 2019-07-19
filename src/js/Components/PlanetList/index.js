@@ -4,9 +4,12 @@ import Planet from "../Planet";
 
 const PlanetList = ({ list }) => {
     return <Fragment>
-        {list.map((v, key) => (
+        <h3>Order By Population:</h3>
+        {list.map((details, key) => (
             <Planet
                 key={key}
+                index={key}
+                details={details}
             />
         ))}
     </Fragment>

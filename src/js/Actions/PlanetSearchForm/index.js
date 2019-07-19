@@ -7,14 +7,15 @@ import {
 import { history } from "../../Helpers/history";
 
 export const performSearchAction = data => {
-    console.log("Search Action perform", data);
     var promise = new Promise(function (resolve, reject) {
         fetch(`https://swapi.co/api/planets/?search=${data.searchStr}`)
         .then(res => res.json())
         .then(json => {
             if(json.results.length) {
                 json.results = json.results.sort(function(planetA, planetB) {
-                    return planetA.population > planetB.population? true: false;
+                    let populationA = isNaN(+(planetA.population)) ? 0 : +(planetA.population)
+                    let populationB = isNaN(+(planetB.population)) ? 0 : +(planetB.population)
+                    return populationB - populationA;
                 })
                 resolve(json.results);
             } else {
