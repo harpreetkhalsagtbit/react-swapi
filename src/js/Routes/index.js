@@ -21,6 +21,22 @@ export default [
     }
   },
   {
+    path: "/home",
+    exact: true,
+    render(props) {
+      let token = localStorage.getItem("token");
+      if (token) {
+        return <Home {...props} />;
+      } else {
+        return (
+          <Redirect
+            to={{ pathname: "/login", state: { from: props.location } }}
+          />
+        );
+      }
+    }
+  },
+  {
     path: "/login",
     exact: true,
     render(props) {

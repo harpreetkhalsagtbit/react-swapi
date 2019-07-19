@@ -1,5 +1,7 @@
 import React from "react";
-import { Router, Switch, Route } from "react-router-dom";
+// import { Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
+
 import routes from "../Routes";
 import { history } from "../Helpers/history";
 

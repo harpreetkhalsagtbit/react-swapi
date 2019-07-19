@@ -39,7 +39,9 @@ export const performLoginAction = data => {
                 localStorage.setItem("token", "token-for-user@" + data.username);
                 localStorage.setItem("sessionSearchCount", 0);
                 localStorage.setItem("prevSearchTimestamp", "");
-                history.push("/");
+                // history.push("/home");
+                // hack for production build
+                window.location.reload()
             },
             reject => {
                 dispatch({
