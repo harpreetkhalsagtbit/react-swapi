@@ -1,2 +1,0 @@
-# react-swapi
-React SWAPI
