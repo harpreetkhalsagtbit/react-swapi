@@ -1,7 +1,5 @@
 import React from "react";
-import Button from "../../Components/Commons/Button";
 import LoginFormContainer from "../../Containers/LoginFormContainer";
-import { Link } from "react-router-dom";
 import './index.css';
 
 class Login extends React.PureComponent {

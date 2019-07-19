@@ -4,8 +4,6 @@ import {
     PLANET_SEARCH_FAILED
 } from "../../Constants/Types";
 
-import { history } from "../../Helpers/history";
-
 export const performSearchAction = data => {
     var promise = new Promise(function (resolve, reject) {
         fetch(`https://swapi.co/api/planets/?search=${data.searchStr}`)

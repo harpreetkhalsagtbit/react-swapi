@@ -2,7 +2,6 @@ import React from "react";
 import TextBox from "../Commons/TextBox";
 import PasswordTextBox from "../Commons/PasswordTextBox";
 import Button from "../Commons/Button";
-import { fail } from "assert";
 
 class LoginForm extends React.PureComponent {
   constructor(props) {

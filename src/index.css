@@ -135,6 +135,12 @@ p {
   float: right;
 }
 
+.flex-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .rows {
   display: flex;
   flex-direction: column;

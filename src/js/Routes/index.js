@@ -3,17 +3,14 @@ import Login from "../Pages/Login";
 import Home from "../Pages/Home";
 import { Redirect } from "react-router-dom";
 
-const isAuthenticated = false;
 export default [
   {
     path: "/",
     exact: true,
     render(props) {
-      console.log("rendering route");
-      var token = localStorage.getItem("token");
-      console.log(token);
+      let token = localStorage.getItem("token");
       if (token) {
-        return <Home />;
+        return <Home {...props} />;
       } else {
         return (
           <Redirect
@@ -27,7 +24,8 @@ export default [
     path: "/login",
     exact: true,
     render(props) {
-      if (isAuthenticated) {
+      let token = localStorage.getItem("token");
+      if (token) {
         return (
           <Redirect to={{ pathname: "/", state: { from: props.location } }} />
         );

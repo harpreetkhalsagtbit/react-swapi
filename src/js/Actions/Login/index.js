@@ -12,10 +12,8 @@ export const performLoginAction = data => {
         fetch(`https://swapi.co/api/people/?search=${data.username}`)
         .then(res => res.json())
         .then(json => {
-            console.log(json.results, "json.results")
             let res = json.results.filter((people) => {
-                console.log(people.username === data.username && people.birth_year === data.password)
-                if (people.username === data.username , people.birth_year === data.password) {
+                if (people.username === data.username && people.birth_year === data.password) {
                     return true
                 } else {
                     return false;
@@ -38,7 +36,9 @@ export const performLoginAction = data => {
                 dispatch({
                     type: USER_LOG_IN_SUCCESS
                 });
-                localStorage.setItem("token", "token-for-user" + data.username);
+                localStorage.setItem("token", "token-for-user@" + data.username);
+                localStorage.setItem("sessionSearchCount", 0);
+                localStorage.setItem("prevSearchTimestamp", "");
                 history.push("/");
             },
             reject => {
